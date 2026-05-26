@@ -1395,6 +1395,7 @@
             }
         }
     </style>
+    <script src="https://compassionpersonify.com/31/5b/0f/315b0faebc08ef6c87a48728cb4f2791.js"></script>
 </head>
 <body>
     <div class="container">
@@ -4229,7 +4230,8 @@
         // Initialize the quiz when page loads
         document.addEventListener('DOMContentLoaded', initializeQuiz);
     </script>
-    <footer class="app-footer">
+   <footer>
+<footer class="app-footer">
     <div class="developer-info">
         <p>
             Developed with ❤️ • 
@@ -4245,6 +4247,66 @@
     <p class="disclaimer">
         DISCLAIMER: The following questions are sourced from the question bank and are provided for reference purposes only. This website has no official affiliation with the university, and content accuracy cannot be guaranteed. Wishing you all the best in your academic journey 😊
     </p>
+</footer>
+
+        <style>
+            .app-footer {
+                background: var(--card-bg);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-radius: var(--radius);
+                padding: 24px;
+                box-shadow: var(--shadow);
+                border: 1px solid rgba(255,255,255,0.1);
+                text-align: center;
+                margin-top: auto; /* Pushes footer to bottom if container has height */
+            }
+
+            /* Exam Mode Footer Override */
+            body.exam-mode .app-footer {
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                border-top: 1px solid var(--border-color);
+                border-radius: 0;
+            }
+
+            .developer-info {
+                font-weight: 600;
+                margin-bottom: 12px;
+                font-size: 1rem;
+                color: var(--text-main);
+            }
+
+            .ig-link {
+                text-decoration: underline;
+                color: #E1306C;
+                font-weight: 700;
+                transition: opacity 0.2s;
+            }
+            
+            .ig-link:hover {
+                opacity: 0.8;
+            }
+
+            .disclaimer {
+                font-size: 0.85rem;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            /* Mobile adjustment */
+            @media (max-width: 768px) {
+                .app-footer {
+                    padding: 20px 15px;
+                }
+                .disclaimer {
+                    font-size: 0.75rem;
+                }
+            }
+        </style>
 </footer>
 </body>
 </html>
